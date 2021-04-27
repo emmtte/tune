@@ -1,4 +1,4 @@
-# streaming-soundtracks
+# StreamingSoundtracks.com
  - http://www.streamingsoundtracks.com
  - https://t.me/streamingsoundtracks
 
