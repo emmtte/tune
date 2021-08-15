@@ -1,4 +1,8 @@
 #sudo apt install recode libxml2-utils
+
+TELEGRAM_TOKEN=
+TELEGRAM_CHATID=
+
 clear
 
 while :
@@ -49,14 +53,16 @@ echo $Track
 Track=$(echo "$Track" | sed -e 's/&/%26/g')
 echo $Track
 
-echo $Asin
-echo $CoverLink
-echo $SiteLink
-echo $PlayStart
-echo $SystemTime
-echo $Length
-echo $ListenerCount
-echo $RequestedBy
+echo "Asin : $Asin"
+echo "CoverLink : $CoverLink"
+echo "SiteLink : $SiteLink"
+echo "PlayStart : $PlayStart"
+echo "SystemTime : $SystemTime"
+echo "Length : $Length"
+echo "ListenerCount : $ListenerCount"
+echo "RequestedBy : $RequestedBy"
+echo "Length: $Length"
+if [[ $Length == "" ]] ; then Length=60000 ; fi
 Length=$(($Length / 1000))
 echo $Length
 Time=$(date -d @$Length +"%-M:%S")
@@ -71,6 +77,8 @@ curl -X POST https://api.telegram.org/bot$TELEGRAM_TOKEN/sendPhoto \
      -d photo="$CoverLink" \
      -d caption="$caption" \
      -d parse_mode="html"
+     #-d disable_notification="true"
+     #-d disable_web_page_preview="true" 
 
 echo
 echo $(date)
