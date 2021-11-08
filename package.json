@@ -5,10 +5,10 @@
   "dependencies": {                                                                                                                                                                                              6     "@binance/connector": "latest",
      "axios": "latest",
      "date-fns": "latest",
-     "date-fns-tz": "^1.1.6",
-     "fast-xml-parser": "^3.21.1",
-     "grammy": "^1.4.0",
-     "html-entities": "^2.3.2",
-     "node-schedule": "^2.0.0",
+     "date-fns-tz": "latest",
+     "fast-xml-parser": "latest",
+     "grammy": "latest",
+     "html-entities": "latest",
+     "node-schedule": "latest",
   }
 }
