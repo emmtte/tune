@@ -1,5 +1,5 @@
-const token=
-const chatId=
+const token=''
+const chatId=''
 
 import axios from 'axios'
 import { Bot } from 'grammy' ; const bot = new Bot(token)
