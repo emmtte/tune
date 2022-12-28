@@ -1,14 +1,11 @@
 {
-  "name": "sst",
-  "version": "1",
-  "license": "mit",
-  "dependencies": {                                                                                                                                                                                              6     "@binance/connector": "latest",
-     "axios": "latest",
-     "date-fns": "latest",
-     "date-fns-tz": "latest",
-     "fast-xml-parser": "latest",
-     "grammy": "latest",
-     "html-entities": "latest",
-     "node-schedule": "latest",
+  "private": "true",
+  "dependencies": {
+    "axios":"latest",
+    "date-fns": "latest",
+    "fast-xml-parser": "latest",
+    "grammy": "latest",
+    "html-entities": "latest",
+    "node-cron": "latest"
   }
 }
